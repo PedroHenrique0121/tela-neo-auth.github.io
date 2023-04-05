@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: #f81d59; 
+  }
+
+.container{
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+}
+
+.section-login{
+    width: 50%;
+    height: 100%;
+    background-image: url("img/bg-sign-in.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 420px;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    font-weight: unset;
+}
+
+.container-title h1{
+    font-size: 30px;
+    color: white;
+    font-weight: unset;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 420px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.container-input label{
+   font-size: 14px;
+   color: white;
+   margin-bottom: 7px;
+}
+
+input{
+    height: 38px;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgb(73, 73, 73);
+    background-color: beige;
+    border-radius: 5px;
+ }
+
+ input[type="password"]{
+    height: 38px;
+    width: 100%;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 40px;
+    color: rgb(73, 73, 73);
+    background-color: beige;
+    border-radius: 5px;
+ }
+ .container-input .input-password{
+    position: relative;
+    width: 100%;
+ }
+
+ .container-input .input-password .icon{
+    position: absolute;
+    top: 9px;
+    right: 16px;
+    cursor: pointer;
+ }
+
+ .container-input .input-password .icon{
+   
+}
+
+ .container-input input::placeholder{
+    color: #bcbcc9;
+    font-style: italic;
+ }
+
+ .container-button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px 10px;
+    width: 100%;
+ }
+
+ .container-button button{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    height: 45px;
+    background-color: #fa6790;
+    padding: 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+.section-area-baner{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container-information{
+    max-width: 320px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-information .container-logo{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.container-information h2{
+    font-size: 30px;
+    color: var(--primary-color);
+    font-weight: unset;
+    line-height: 30px;
+}
+
+@media (max-width: 950px){
+    .section-area-baner{
+        display: none;
+    }
+    .section-login{
+        width: 100%;
+    }
+    
+}
